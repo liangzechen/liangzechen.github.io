@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘艳芳的点名表</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <style>
+        
+ul{
+    list-style: none;
+}
+span{
+    position: relative;
+    left: 120px;
+}
+#demo{
+    position: absolute;
+    left: 140px;
+}
+    </style>
+</head>
+<body>
+    <div id="app">
+        <cpn ></cpn>
+    </div>
+    <!-- //模板 -->
+    <template id="cpn">
+        <div>
+            <span>刘艳芳的点名表</span>
+            <br>
+                已经点到的同学：<span id="demo"></span>
+            <ul>
+                
+                <li v-for="item in students" id="item.id" ref="item.id" v-if="item.show">
+                    姓名:{{item.name}}     学号:{{item.id}}
+                    <button  @click="click(item)" >{{item.shanchu}}</button>
+                    <br><br>
+                </li>
+                
+            </ul>
+            
+        </div>
+    </template>
+    <script >
+        var user
+        //子组件
+        var cpn = {
+            template:'#cpn',
+            data(){
+                return {
+                    names:[
+                        {name:'123'},{name:'123'},{name:'123'}
+                    ]
+                }
+            }
+        }
+        //父组件
+        var app = new Vue({
+            el:'#app',
+            template:'#cpn',
+            data:{
+                // show:false,
+                students:[
+                    {
+                        name:'苏继祥',
+                        id:'2021002677                        ',
+                        shanchu:'删除',
+                        show:true,
+                        
+                    },
+                    {
+                        name:'郑羿羿                     ',
+                        id:'2021002678                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'刘艳芳                        ',
+                        id:'2021002679                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'仵艺璞                        ',
+                        id:'2021002680                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'王清颖                        ',
+                        id:'2021002681                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'贾真彭                        ',
+                        id:'2021002682                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'梁泽琛                        ',
+                        id:'2021002683                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'李恩吉                        ',
+                        id:'2021002684                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'李兆楠                        ',
+                        id:'2021002685                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'邓闰阳                        ',
+                        id:'2021002686                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'张熔麒                        ',
+                        id:'2021002687                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'朱泽基                        ',
+                        id:'2021002689                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'李亚杰                        ',
+                        id:'2021002690                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'苗耀予                        ',
+                        id:'2021002691                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'张佳皓                        ',
+                        id:'2021002692                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'王泳铸                        ',
+                        id:'2021002693                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'李梓冬                        ',
+                        id:'2021002694                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'胡起闻                        ',
+                        id:'2021002695                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'黄蕾蕾                       ',
+                        id:'2021002696                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'郭思伟                        ',
+                        id:'2021002697                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'方宇豪                        ',
+                        id:'2021002704                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'靳嘉庆                        ',
+                        id:'2021002705                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+                    {
+                        name:'王家辉                        ',
+                        id:'2021002706                        ',
+                        shanchu:'删除',
+                        show:true,
+                    },
+
+                    
+                ],
+                names:'123'
+            },
+            components:{
+                cpn
+            },
+            methods: {
+                click(item){
+                    // alert(item.show)
+                    item.show = !item.show;
+                    // alert(item.id)
+                    user = item.name
+                    // alert(user)
+                    document.getElementById("demo").innerHTML=user
+                    // console.log(item.name)
+                    // this.students[0].pop()
+                    // delete this.students[0];
+                    // this.students.forEach(function(item, index, arr) {
+                    //     if(item.id === "111") {
+                    //         arr.splice(0, 1);
+                    //     }
+                    //     else if(item.id === "112") {
+                    //         arr.splice(1, 1);
+                    //     }
+                    //     else if(item.id === "113") {
+                    //         arr.splice(2, 1);
+                    //     }
+                    //     else if(item.id === "114"){
+                    //         arr.splice(3, 1);
+                    //     }
+                    //     else(
+                    //         console.log('122')
+                    //     )
+                    // });
+                    // delete this.students[0];
+                    // document.getElementById(item.id).style
+                }
+            }
+        })
+    </script>
+</body>
+</html>
