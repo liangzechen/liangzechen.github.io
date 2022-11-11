@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>榆次大学生家教网</title>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <!-- <link rel="stylesheet" href="css.css"> -->
+    <style>
+      .foot{
+          width: 100%;
+          height: 200px;
+          background-color: rgb(220, 219, 219);
+      }
+      .container-fluid{
+          padding-left: 0px;
+          padding-right: 0px;
+      }
+      
+      #index1{
+          position: relative;
+          left: -17px;
+      }
+      a{text-decoration:none;}
+
+      a:hover{text-decoration:underline;}
+    </style>
+</head>
+<body>
+    <!-- head -->
+  <div class="container ">
+    <div class="page-header">
+      <h1 class="text-center"> 榆次大学生家教网
+        <p class="text-right h3">
+          给我们一个机会，还您一份收获
+        </p>
+      </h1>
+      
+    </div>
+    <!-- banner -->
+
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">切换导航</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            
+            <a class="navbar-brand" href="#"> 主页</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle navbar-brand " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">加入我们<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" onclick="alert('详细信息请联系13333442473(微信同号)')">我是大学生</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#" onclick="alert('详细信息请联系13333442473(微信同号)')">我是家长</a></li>
+                  <!-- <li role="separator" class="divider"></li> -->
+                  <!-- <li><a href="#"></a></li> -->
+                  <!-- <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">One more separated link</a></li> -->
+                </ul>
+              </li>
+              <li><a class="navbar-brand" href="https://gitee.com/liangzechen" >关于我们</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="输入...">
+              </div>
+              <button type="submit" class="btn btn-default" onclick="alert('抱歉，暂不支持搜索功能')">搜索</button>
+            </form>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+
+
+
+
+    <!-- index1 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="./imgs/2.png" alt="">
+            <div class="caption">
+              <h3>梁同学</h3>
+              <p>擅长科目:数学</p>
+              <p>高中就读学校:榆次一中(尖子班)</p>
+              <p>大学就读学校:太原理工大学</p>
+              <p>居住地址:榆次区万达广场对面</p>
+              <p>
+                <button type="button" class="btn btn-primary" title="联系方式"
+                        data-container="body" data-toggle="popover" data-placement="top"
+                        data-content="13333442473(微信同号)">
+                    联系一下
+                </button>
+                <button type="button" class="btn btn-success" title="梁同学"  
+                  data-container="body" data-toggle="popover" data-placement="bottom" 
+                  data-content="各位家长您好:
+                  我是毕业于榆次一中尖子班的大学生，在这个漫长的暑假，为了有一个自我锻炼提升，体验生活的机会。在暑假期间想寻找一份兼职工作，本人在校成绩优异，乐于思考，善于钻研，在校期间我们一直担任课代表，这也练就了我较强的分析和表达能力。
+                  我们可以做初中或高中课程辅导，工资要求不高，时间宽裕。如果您给我们一个机会，我们会还您十分的惊喜！">
+                更多信息
+              </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="./imgs/2.png" alt="">
+            <div class="caption">
+              <h3>龚同学</h3>
+              <p>擅长科目:数学，物理</p>
+              <p>高中就读学校:榆次一中(尖子班)</p>
+              <p>大学就读学校:太原理工大学</p>
+              <p>居住地址:榆次区榆次一中附近</p>
+              <p>
+                <button type="button" class="btn btn-primary" title="联系方式"
+                        data-container="body" data-toggle="popover" data-placement="top"
+                        data-content="13333442473(微信同号)">
+                    联系一下
+                </button>
+                <button type="button" class="btn btn-success" title="龚同学"  
+                  data-container="body" data-toggle="popover" data-placement="bottom" 
+                  data-content="各位家长您好:
+                  本人高中就读于榆次一中尖子班，高考考入太原理工大学人工智能与仪器类专业，专业大类排名前百分之二十，在学习中认真负责。积极参与学生工作有较强的领导与表达能力。在校努力学习获得二等奖学金、优秀共青团干部等诸多奖项，并积极参加各类科技竞赛。
+自认为有着较强的理解和表达能力，在学校中常常给同学们讲题。在台上从不怯场，可以条理且清晰的讲课，深受同学们欢迎。">
+                更多信息
+              </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="./imgs/3.png" alt="">
+            <div class="caption">
+              <h3>郭同学</h3>
+              <p>擅长科目:化学，物理，英语</p>
+              <p>高中就读学校:榆次一中(尖子班)</p>
+              <p>大学就读学校:华中农业大学</p>
+              <p>居住地址:榆次区榆次一中附近</p>
+              <p>
+                <button type="button" class="btn btn-primary" title="联系方式"
+                        data-container="body" data-toggle="popover" data-placement="top"
+                        data-content="13333442473(微信同号)">
+                    联系一下
+                </button>
+                <button type="button" class="btn btn-success" title="郭同学"  
+                  data-container="body" data-toggle="popover" data-placement="bottom" 
+                  data-content="各位家长您好，我高中毕业于榆次一中尖子班，目前就读于华中农业大学经济管理学院。在高中时期，我担任课代表一职，耐心细腻，勤于思考，在大学期间，辩论特长突出，院队和校队均考核通过，口语表达能力清晰。我可以辅导小初高理科科目，尤其擅长化学，物理和英语。我会结合每个学生的特点，以最优的方式进行辅导。在暑期，我时间宽裕，同时想要提高自己的核心素养，以实践丰富理论，工资要求不高，希望您可以给我一次锻炼机会。">
+                更多信息
+              </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="container" id="index1">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="./imgs/3.png" alt="">
+              <div class="caption">
+                <h3>田同学</h3>
+              <p>擅长科目:英语，化学</p>
+              <p>高中就读学校:榆次一中(尖子班)</p>
+              <p>大学就读学校:中国海洋大学</p>
+              <p>居住地址:榆次区雅园附近</p>
+              <p>
+                <button type="button" class="btn btn-primary" title="联系方式"
+                        data-container="body" data-toggle="popover" data-placement="top"
+                        data-content="13333442473(微信同号)">
+                    联系一下
+                </button>
+                <button type="button" class="btn btn-success" title="田同学"  
+                  data-container="body" data-toggle="popover" data-placement="bottom" 
+                  data-content="我是毕业于榆次一中的学生，有较好的亲和力，耐心和沟通能力，一对一家教对孩子来说更具针对性，学生教学不仅可以弥补知识上漏洞提升弱势科目，也有学习方法，做题思路上的交流。更能让学生感知高考，具有远瞻性。
+小学初中高中科目均可辅导。（会提前备课）可上门线下教学。">
+                更多信息
+              </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="./imgs/3.png" alt="">
+              <div class="caption">
+                <h3>梁同学</h3>
+              <p>擅长科目:数学(高中文科)</p>
+              <p>高中就读学校:榆次二中(文科实验一)</p>
+              <p>大学就读学校:东华大学</p>
+              <p>居住地址:榆次区榆次二中附近</p>
+              <p>
+                <button type="button" class="btn btn-primary" title="联系方式"
+                        data-container="body" data-toggle="popover" data-placement="top"
+                        data-content="13333442473(微信同号)">
+                    联系一下
+                </button>
+                <button type="button" class="btn btn-success" title="梁同学"  
+                  data-container="body" data-toggle="popover" data-placement="bottom" 
+                  data-content="各位家长您好，我高中毕业于榆次二中文科实验一，目前就读于东华大学（211）服装与艺术设计学院。高考为了实现我的梦想我选择了美术这条道路，但是我对学习也没有丝毫懈怠，初中高中的学习成绩在班级里也十分优异，美术并没有妨碍我的学习，反而还让我实现了梦想。初中高中以及大学我都担任班干部，大学更是加入了不少社团，我待人有耐心，有较好的沟通能力和亲和力。我比较擅长文科学科、初中的理科内容以及数学，有美术方面的需求我也可以帮忙。小学初中高中的学生我都可以专门辅导，对症下药，时间充裕，线上线下均可。">
+                更多信息
+              </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="./imgs/3.png" alt="">
+              <div class="caption">
+                <h3>韩同学</h3>
+              <p>擅长科目:英语，生物</p>
+              <p>高中就读学校:榆次一中(尖子班)</p>
+              <p>大学就读学校:山西医科大学</p>
+              <p>居住地址:榆次区榆次四中附近</p>
+              <p>
+                <button type="button" class="btn btn-primary" title="联系方式"
+                        data-container="body" data-toggle="popover" data-placement="top"
+                        data-content="13333442473(微信同号)">
+                    联系一下
+                </button>
+                <button type="button" class="btn btn-success" title="韩同学"  
+                  data-container="body" data-toggle="popover" data-placement="bottom" 
+                  data-content="各位家长您好:
+                  我是毕业于榆次一中尖子班的大学生，在这个漫长的暑假，为了有一个自我锻炼提升，体验生活的机会。在暑假期间想寻找一份兼职工作，本人在校成绩优异，乐于思考，善于钻研，在校期间我们一直担任课代表，这也练就了我较强的分析和表达能力。
+                  我们可以做初中或高中课程辅导，工资要求不高，时间宽裕。如果您给我们一个机会，我们会还您十分的惊喜！">
+                更多信息
+              </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+<div class="container" id="index1">
+    <div class="row">
+    <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <img src="./imgs/3.png" alt="">
+        <div class="caption">
+        <h3>赵同学</h3>
+        <p>擅长科目:数学生物</p>
+        <p>高中就读学校:榆次二中(理科实验一)</p>
+        <p>大学就读学校:西南财经大学</p>
+        <p>居住地址:榆次区万达广场对面</p>
+        <p>
+        <button type="button" class="btn btn-primary" title="联系方式"
+                data-container="body" data-toggle="popover" data-placement="top"
+                data-content="13333442473(微信同号)">
+            联系一下
+        </button>
+        <button type="button" class="btn btn-success" title="赵同学"  
+            data-container="body" data-toggle="popover" data-placement="bottom" 
+            data-content="各位家长您好:我毕业于榆次二中理科实验一班，现在就读于四川成都的西南财经大学。在这个暑假想寻找一份兼职。我在校成绩优异，基础知识扎实，比较有亲和力，容易和年纪较小的孩子沟通，可以做初中辅导和高中部分科目辅导，时间宽裕，工资要求不高，期待与您的相遇，谢谢!">
+        更多信息
+        </button>
+        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+        
+        
+
+
+
+
+    <!-- foot -->
+    <div class="container-fluid">
+      <div class="foot">
+        <br>
+        <br>
+        <br>
+        <p class="text-center h1">为了孩子更美好的明天，我们将尽我们最大的努力！</p>
+        <br>
+        
+        <p class="text-right h4"></p>
+      </div>
+    </div>
+
+
+
+
+    <script>
+      $(function () { 
+        $("[data-toggle='popover']").popover();
+      });
+      </script>
+</body>
+</html>
