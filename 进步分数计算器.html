@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21暖通进步分</title>
+</head>
+<body>
+    <script>
+        var old=prompt("上学期成绩");
+        var ben=prompt("本学期成绩");
+        var jinbu = old-ben;
+        var all=prompt("本专业年级人数");
+        var all2=all*0.3
+        var all23=Math.ceil(all2)
+        var all1=all*0.15
+        var all12=Math.ceil(all1)
+        //alert(all12)
+        var score
+        if(jinbu>0){
+            if(old>all23){
+                //alert(3)
+                if (ben>all23) {
+                    //alert(33)
+                    score=jinbu*0.2
+                }
+                else if (ben>=all12&&ben<=all23) {
+                    //alert(32)
+                    score=(old-all23)*0.2+(all23-ben)*0.5
+                }
+                else if (ben<all12) {
+                    //alert(31)
+                    score=(old-all23)*0.2+(all23-all12)*0.5+(all12-ben)*2
+                }
+                else{
+                    alert("错误")
+                }
+            }
+            else if (old>=all12&&old<=all23) {
+               // alert(2)
+                if (ben>=all12&&ben<=all23) {
+                    //alert(22)
+                    score=jinbu*0.5
+                }
+                else if (ben<all12) {
+                    //alert(21)
+                    score=(old-all12)*0.5+(all12-ben)*2
+                }
+                else{
+                    alert("错误")
+                }
+            }
+           else if (old<all12) {
+                //alert(1)
+                 if (ben<all12) {
+                    //alert(11)
+                    score=jinbu*2
+                }
+                else{
+                    alert("错误")
+                }
+            }
+        }
+        else{
+                alert("没进步")
+            }
+        if (score>=10) {
+            alert(10)
+        }
+        else{
+            alert(score)}
+
+    </script>
+</body>
+</html>
